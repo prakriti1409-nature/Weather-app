@@ -18,15 +18,14 @@ A simple interactive **City Weather Gallery** web app that lets you:
 - Customizable with your own city images.
 
 ---
+## 🛠 Technologies Used
 
-## 🖼 Preview
-
-
+- jQuery
+- HTML5
+- CSS3 (responsive design)
+- OpenWeatherMap API
 
 ---
-
----
-
 ## ⚙️ How It Works
 
 1. **Image Click**  
@@ -40,17 +39,9 @@ A simple interactive **City Weather Gallery** web app that lets you:
 
 ---
 
-## 🛠 Technologies Used
-
-- jQuery
-- HTML5
-- CSS3 (responsive design)
-- OpenWeatherMap API
-
----
-
 ## Preview
-<img width="1887" height="923" alt="w11" src="https://github.com/user-attachments/assets/06001ee4-c2a9-439f-bf4e-d9c938a4361a" />
+<img width="1880" height="921" alt="image" src="https://github.com/user-attachments/assets/8ff69b8c-3cc8-41b9-bb7b-8cd42510b5cc" />
+
 <img width="1498" height="839" alt="image" src="https://github.com/user-attachments/assets/b2d170dd-f3c5-41fc-99cb-16d0386c9f43" />
 <img width="1129" height="830" alt="image" src="https://github.com/user-attachments/assets/629b68a1-c359-4783-b3d4-a3525800407a" />
 
