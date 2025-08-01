@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(270deg, #0d5f67,#0a1425,#0c7861);
+  background-size: 600% 600%;
+  margin: 0;
+  min-height: 100vh;
+  animation: gradientMove 20s ease infinite;
+}
+
+
+
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1 {
+  padding: 20px;
+  background: #222;
+  color: white;
+  margin: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+#lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#lightbox .content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+  background: #222;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+
+#lightbox img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 15px;
+  animation: zoomIn 0.3s ease;
+}
+
+#weather-info {
+  font-size: 18px;
+  text-align: left;
+  max-width: 40%;
+}
+
+#weather-info button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #444;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#weather-info button:hover {
+  background: #666;
+}
+
+#close, #prev, #next {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  user-select: none;
+}
+
+#close { top: 20px; right: 30px; }
+#prev { top: 50%; left: 20px; transform: translateY(-50%); }
+#next { top: 50%; right: 20px; transform: translateY(-50%); }
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); }
+  to { transform: scale(1); }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Weather Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h1>City Weather Gallery</h1>
+  <div class="gallery">
+    <img src="ny.jpg" data-city="New York" alt="New York">
+    <img src="p.jpg" data-city="Paris" alt="Paris">
+    <img src="t.jpg" data-city="Tokyo" alt="Tokyo">
+    <img src="l.jpg" data-city="London" alt="London">
+    <img src="s.jpg" data-city="Sydney" alt="Sydney">
+    <img src="d.jpg" data-city="Dubai" alt="Dubai">
+  </div>
+
+  <!-- Modal / Lightbox -->
+  <div id="lightbox">
+    <span id="close">&times;</span>
+    <button id="prev">&#10094;</button>
+    <div class="content">
+      <img id="lightbox-img" src="" alt="Large City View">
+      <div id="weather-info"></div>
+    </div>
+    <button id="next">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
